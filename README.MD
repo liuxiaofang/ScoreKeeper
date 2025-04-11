@@ -39,17 +39,3 @@
   <p class="zh">本项目基于 <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> 开源。</p>
   <p class="en" style="display:none;">This project is licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>.</p>
 </div>
-
-<script>
-  function setLanguage(lang) {
-    const zhElements = document.querySelectorAll('.zh');
-    const enElements = document.querySelectorAll('.en');
-    if (lang === 'zh') {
-      zhElements.forEach(el => el.style.display = '');
-      enElements.forEach(el => el.style.display = 'none');
-    } else {
-      zhElements.forEach(el => el.style.display = 'none');
-      enElements.forEach(el => el.style.display = '');
-    }
-  }
-</script>
