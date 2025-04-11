@@ -26,7 +26,7 @@
   <ol>
     <li class="zh">克隆项目到本地：</li>
     <li class="en" style="display:none;">Clone the repository to your local machine:</li>
-    <pre><code>git clone https://github.com/your-username/your-repo.git</code></pre>
+    <pre><code>git clone https://github.com/liuxiaofang/ScoreKeeper.git</code></pre>
     <li class="zh">打开 Android Studio 并导入项目。</li>
     <li class="en" style="display:none;">Open Android Studio and import the project.</li>
     <li class="zh">同步 Gradle 文件。</li>
