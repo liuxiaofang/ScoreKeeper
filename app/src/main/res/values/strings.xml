@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">球场计分</string>
+    <string name="start_match">开局</string>
+    <string name="end_match">结束</string>
+</resources>

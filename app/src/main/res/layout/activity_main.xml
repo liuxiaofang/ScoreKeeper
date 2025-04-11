@@ -1,0 +1,165 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Score Display Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Red Team Score Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/redTeamLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="红\n队"
+                    android:textSize="36sp"
+                    android:textColor="#FF0000"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10dp"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:id="@+id/redTeamScoreTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="000"
+                    android:textSize="120sp"
+                    android:gravity="center"
+                    android:textColor="#FF0000"
+                    android:ellipsize="none"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <!-- Blue Team Score Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/blueTeamLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="蓝\n队"
+                    android:textSize="36sp"
+                    android:textColor="#0000FF"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10dp"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:id="@+id/blueTeamScoreTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="000"
+                    android:textSize="120sp"
+                    android:gravity="center"
+                    android:textColor="#0000FF"
+                    android:ellipsize="none"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Buttons Section -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="2"
+            android:padding="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Red Team Increment Button -->
+            <Button
+                android:id="@+id/redTeamIncrementButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="红队 +1"
+                android:textSize="18sp" />
+
+            <!-- Announce Button -->
+            <Button
+                android:id="@+id/announceButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="播报"
+                android:textSize="18sp" />
+
+            <!-- Blue Team Increment Button -->
+            <Button
+                android:id="@+id/blueTeamIncrementButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="蓝队 +1"
+                android:textSize="18sp" />
+
+            <!-- Red Team Decrement Button -->
+            <Button
+                android:id="@+id/redTeamDecrementButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="红队 -1"
+                android:textSize="18sp" />
+
+            <!-- Reset Button -->
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="@string/start_match"
+                android:textSize="18sp" />
+
+            <!-- Blue Team Decrement Button -->
+            <Button
+                android:id="@+id/blueTeamDecrementButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="蓝队 -1"
+                android:textSize="18sp" />
+        </GridLayout>
+    </LinearLayout>
+
+    <!-- Floating Button in the Top-Right Corner -->
+    <ImageButton
+        android:id="@+id/matchesButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end|top"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Matches"
+        android:src="@android:drawable/ic_menu_agenda" />
+</FrameLayout>
