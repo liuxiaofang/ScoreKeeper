@@ -1,8 +1,5 @@
 # <span id="project-title">Match Scorekeeper</span>
 
-<div>
-  <button onclick="setLanguage('en')">English</button>
-</div>
 
 <div id="content">
   <h2>Project Description</h2>
